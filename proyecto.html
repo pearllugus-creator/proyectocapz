@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="favicon1.jpg">
+    <title>Información - Captación de Agua Zinacantepec</title>
+    <link rel="stylesheet" href="aguas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="gato.jpg" alt="Captación Agua Zinacantepec">
+                <h1>Captación de Agua</h1>
+            </div>
+            
+            <!-- Botón Hamburguesa -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Overlay para cerrar menú -->
+            <div class="overlay" id="overlay"></div>
+            
+            <!-- Navegación -->
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyecto.html" class="active">Información</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero Información -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Información sobre la captación de agua en Zinacantepec</h1>
+            <p>Conoce datos específicos como: Mantenimiento, Preguntas Frecuentes, Proveedores locales y Tips para instalaciones.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Mantenimiento -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Mantenimiento de Sistemas</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Revisa los filtros: </h3>
+                    <p>Cambia o limpia los filtros de tus sistemas de captación de agua cada 3 meses para
+                         evitar obstrucciones.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Inspecciona las bombas:</h3>
+                    <p>Verifica el funcionamiento de las bombas mensualmente, prestando atención a 
+                        ruidos inusuales o vibraciones.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Limpia los tanques:</h3>
+                    <p>Realiza una limpieza interna de los tanques de agua al menos una vez al
+                        año para evitar la acumulación de sedimentos.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Verifica las conexiones: </h3>
+                    <p>Revisa las mangueras y conexiones anualmente, buscando signos
+                         de fugas o corrosión.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Desinfecta el agua: </h3>
+                    <p> Aplica tratamientos de desinfección a tu sistema de captación de agua cada 6 
+                        meses para mantenerla libre de contaminantes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto cuesta instalar un sistema de captación de agua?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El costo varía según la capacidad del sistema. Un sistema básico para una casa familiar puede costar entre $5,000 y $15,000 MXN, mientras que sistemas más grandes para negocios pueden superar los $30,000 MXN.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué mantenimiento requiere el sistema?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El mantenimiento incluye limpieza mensual de filtros, inspección trimestral de cisternas y revisión anual de bombas y sistemas de distribución.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Funciona en zonas secas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, los sistemas de captación de agua pueden ser efectivos en zonas secas si se diseñan adecuadamente y se integran con otras fuentes de agua.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué hago si hay una fuga?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Apaga el sistema inmediatamente y contacta a un técnico certificado para solucionar el problema.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo durarán los componentes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los componentes del sistema varían en durabilidad, pero con un mantenimiento adecuado, puedes esperar que duren entre 5 a 10 años.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo instalarlo yo mismo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aunque se puede realizar la instalación básica, es aconsejable contratar a un técnico para asegurar un trabajo seguro y eficiente.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo durarán los componentes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los componentes del sistema varían en durabilidad, pero con un mantenimiento adecuado, puedes esperar que duren entre 5 a 10 años.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo durarán los componentes?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Los componentes del sistema varían en durabilidad, pero con un mantenimiento adecuado, puedes esperar que duren entre 5 a 10 años.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Proveedores Locales -->
+    <section class="providers-section">
+        <div class="container">
+            <h2>Proveedores Locales</h2>
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <h3>EcoTecnologías Zinacantepec</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal #123, Centro</p>
+                    <p><i class="fas fa-phone"></i> 722 123 4567</p>
+                    <p>Especialistas en sistemas residenciales y filtros de agua.</p>
+                </div>
+                <div class="provider-card">
+                    <h3>AguaSostenible MX</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Morelos #45, San Mateo</p>
+                    <p><i class="fas fa-phone"></i> 722 765 4321</p>
+                    <p>Instalación y mantenimiento de sistemas comerciales e industriales.</p>
+                </div>
+                <div class="provider-card">
+                    <h3>Capta Lluvia Toluca</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Blvd. Toluca #567, San Juan</p>
+                    <p><i class="fas fa-phone"></i> 722 987 6543</p>
+                    <p>Venta de materiales y asesoría técnica para proyectos comunitarios.</p>
+                </div>
+                <div class="provider-card">
+                    <h3>Soluciones Hídricas</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Carretera a México #89, Los Encinos</p>
+                    <p><i class="fas fa-phone"></i> 722 456 7890</p>
+                    <p>Diseño e instalación de sistemas personalizados según necesidades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Guía de Instalación -->
+    <section class="guide-section">
+        <div class="container">
+            <h2>Guía de Instalación Básica</h2>
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Evaluación del Techo</h3>
+                        <p>Identifica el área de captación y calcula la superficie disponible. Un techo de 100m² puede captar aproximadamente 75,000 litros al año en Zinacantepec.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Instalación de Canaletas</h3>
+                        <p>Coloca canaletas alrededor del perímetro del techo con una ligera inclinación hacia el punto de recolección.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Sistema de Filtrado</h3>
+                        <p>Instala filtros de hojas y sedimentos en la tubería de bajada para eliminar impurezas antes del almacenamiento.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Cisterna de Almacenamiento</h3>
+                        <p>Coloca la cisterna en un lugar elevado o instala una bomba para facilitar la distribución del agua.</p>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Sistema de Distribución</h3>
+                        <p>Conecta la cisterna a los puntos de uso (sanitarios, riego, lavado) mediante tuberías separadas del agua potable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="gato.jpg" alt="Captación Agua Zinacantepec">
+                        <h3>Captación de Agua</h3>
+                    </div>
+                    <p>Soluciones sostenibles para el aprovechamiento del agua de lluvia en Zinacantepec y sus alrededores.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="proyecto.html">Información</a></li>
+                        <li><a href="calculadora.html">Calculadora</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para el menú hamburguesa y FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            const overlay = document.getElementById('overlay');
+            
+            // Alternar menú hamburguesa
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                overlay.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+            
+            // Cerrar menú al hacer clic en overlay
+            overlay.addEventListener('click', function() {
+                mainNav.classList.remove('active');
+                overlay.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+            
+            // Cerrar menú al hacer clic en un enlace (en móviles)
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 480) {
+                        mainNav.classList.remove('active');
+                        overlay.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                    }
+                });
+            });
+
+            // Funcionalidad para las preguntas frecuentes
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Cerrar otras respuestas abiertas
+                    document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                        if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                            otherAnswer.classList.remove('active');
+                            otherAnswer.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                            otherAnswer.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                        }
+                    });
+                    
+                    // Alternar la respuesta actual
+                    answer.classList.toggle('active');
+                    
+                    // Cambiar icono
+                    if (answer.classList.contains('active')) {
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
