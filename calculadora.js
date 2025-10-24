@@ -54,7 +54,7 @@ function inicializarEventListeners() {
     // Botones de gráfica
     document.querySelectorAll('.btn-chart').forEach(btn => {
         btn.addEventListener('click', function() {
-            cambiarTipoGrafica(this.dataset.type);
+            cambiarTipoGrafica(this.dataset.type, this);
         });
     });
     
@@ -323,7 +323,7 @@ function obtenerDatosGrafica() {
 }
 
 // Función para cambiar el tipo de gráfica
-function cambiarTipoGrafica(tipo) {
+function cambiarTipoGrafica(tipo, elemento) {
     currentChartType = tipo;
     
     // Actualizar estado visual de los botones
@@ -331,7 +331,7 @@ function cambiarTipoGrafica(tipo) {
         btn.classList.remove('active');
     });
     
-    event.target.classList.add('active');
+    elemento.classList.add('active');
     
     // Recrear la gráfica con el nuevo tipo
     inicializarGrafica();
