@@ -322,12 +322,12 @@ button {
 }
 
 .result-item {
-    background: var(--light-color);
-    padding: 25px 20px;
-    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 25px;
+    border-radius: 15px;
     text-align: center;
-    transition: var(--transition);
     border-left: 4px solid var(--secondary-color);
+    transition: var(--transition);
 }
 
 .result-item:hover {
@@ -336,36 +336,30 @@ button {
 }
 
 .result-label {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--text-light);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-weight: 500;
 }
 
 .result-value {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: var(--secondary-color);
-    display: block;
+    color: var(--primary-color);
 }
 
 .tip {
-    background: linear-gradient(135deg, #e8f0fe, #d0e3ff);
-    border-left: 4px solid var(--primary-color);
-    padding: 20px;
-    margin-top: 25px;
-    border-radius: 0 12px 12px 0;
+    background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid var(--accent-color);
+    margin-top: 20px;
 }
 
 .tip h3 {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin-bottom: 10px;
     font-size: 1.2rem;
-}
-
-.tip p {
-    color: var(--text-color);
-    line-height: 1.5;
 }
 
 /* Sección de Gráfica */
@@ -374,37 +368,27 @@ button {
     border-radius: 20px;
     box-shadow: var(--shadow);
     padding: 40px;
-    margin: 30px 0;
-    position: relative;
-    overflow: hidden;
+    margin-top: 30px;
     display: none;
-}
-
-.chart-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    animation: fadeInUp 0.5s ease;
 }
 
 .chart-section.active {
     display: block;
 }
 
-.chart-section h2 {
-    text-align: center;
+.chart-container h2 {
     color: var(--primary-color);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    text-align: center;
     font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .chart-wrapper {
-    position: relative;
     height: 400px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
 }
 
 .chart-controls {
@@ -415,40 +399,31 @@ button {
 }
 
 .btn-chart {
-    background: var(--light-color);
+    flex: 0 1 auto;
+    min-width: 120px;
+    background-color: #f8f9fa;
     color: var(--text-color);
     border: 2px solid #e0e0e0;
     padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
+.btn-chart.active,
 .btn-chart:hover {
-    background: var(--secondary-color);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.btn-chart.active {
-    background: var(--secondary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     border-color: var(--secondary-color);
 }
 
-/* Sección de Compartir */
+/* Sección Compartir */
 .share-section {
     background: var(--white);
     border-radius: 20px;
     box-shadow: var(--shadow);
-    padding: 30px;
-    margin: 20px 0;
-    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
     display: none;
+    animation: fadeInUp 0.5s ease;
+    text-align: center;
 }
 
 .share-section.active {
@@ -459,6 +434,7 @@ button {
     color: var(--primary-color);
     margin-bottom: 25px;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .share-buttons {
@@ -469,67 +445,41 @@ button {
 }
 
 .btn-share {
-    background: var(--light-color);
+    flex: 0 1 auto;
+    min-width: 140px;
+    background-color: #f8f9fa;
     color: var(--text-color);
     border: 2px solid #e0e0e0;
     padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-width: 140px;
-    justify-content: center;
 }
 
 .btn-share:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.btn-share:nth-child(1):hover {
-    background: #25D366;
-    color: white;
-    border-color: #25D366;
-}
-
-.btn-share:nth-child(2):hover {
-    background: #1877F2;
-    color: white;
-    border-color: #1877F2;
-}
-
-.btn-share:nth-child(3):hover {
-    background: #1DA1F2;
-    color: white;
-    border-color: #1DA1F2;
-}
-
-.btn-share:nth-child(4):hover {
-    background: var(--secondary-color);
-    color: white;
-    border-color: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Tarjetas de información */
 .info-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 30px;
     margin-top: 40px;
 }
 
 .info-card {
     background: var(--white);
-    padding: 30px 25px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: var(--shadow);
+    padding: 30px;
     text-align: center;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
 .info-card::before {
@@ -538,17 +488,12 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
-}
-
-.info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent-color), #57c5b6);
 }
 
 .info-icon {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--secondary-color);
     margin-bottom: 20px;
 }
@@ -556,7 +501,8 @@ button {
 .info-card h3 {
     color: var(--primary-color);
     margin-bottom: 15px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .info-card p {
@@ -570,39 +516,82 @@ button {
 }
 
 .info-card ul li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
+    padding: 8px 0;
     color: var(--text-light);
+    position: relative;
+    padding-left: 25px;
 }
 
 .info-card ul li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+    background: linear-gradient(135deg, var(--dark-color) 0%, #34495e 100%);
     color: var(--white);
-    padding: 60px 0 0;
     margin-top: 60px;
+    padding: 50px 0 20px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section .logo {
+    margin-bottom: 20px;
+}
+
+.footer-section .logo img {
+    height: 50px;
+}
+
+.footer-section .logo h3 {
+    color: var(--white);
+    font-size: 1.4rem;
+}
+
+.footer-section p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
 }
 
 .footer-section h4 {
+    color: var(--white);
     margin-bottom: 20px;
-    font-size: 1.3rem;
-    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .footer-section ul {
@@ -610,7 +599,7 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .footer-section ul li a {
@@ -624,99 +613,12 @@ footer {
     padding-left: 5px;
 }
 
-.social-links {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: var(--white);
-    transition: var(--transition);
-    font-size: 1.2rem;
-}
-
-.social-links a:hover {
-    background-color: var(--accent-color);
-    transform: translateY(-5px);
-}
-
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 25px 0;
     text-align: center;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* WhatsApp Float Button */
-.whatsapp-float {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.8rem;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-    z-index: 1000;
-    transition: var(--transition);
-    animation: pulse-whatsapp 2s infinite;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
-}
-
-/* Animaciones */
-@keyframes pulse-whatsapp {
-    0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-    }
-    70% {
-        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.chart-section, .share-section {
-    animation: slideInDown 0.5s ease;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
 }
 
 /* Mensajes de alerta */
@@ -724,11 +626,11 @@ footer {
     position: fixed;
     top: 100px;
     right: 20px;
-    background: #4CAF50;
-    color: white;
     padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    box-shadow: var(--shadow);
     z-index: 10000;
     display: flex;
     align-items: center;
@@ -741,139 +643,45 @@ footer {
     background: none;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 1.2rem;
     cursor: pointer;
     padding: 0;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: auto;
     flex: 0 0 auto;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideInRight {
     from {
-        transform: translateX(100%);
         opacity: 0;
+        transform: translateX(100%);
     }
     to {
-        transform: translateX(0);
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
-/* Media Queries para menú hamburguesa */
+/* Media Queries para Responsividad */
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
     }
     
     .nav-container {
-        flex-direction: row;
-        height: auto;
-        padding: 15px;
-    }
-    
-    .menu-toggle {
-        display: block;
-    }
-    
-    .overlay {
-        display: block;
-    }
-    
-    .overlay.active {
-        opacity: 1;
-    }
-    
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--white);
-        box-shadow: var(--shadow);
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: var(--transition);
-    }
-    
-    nav.active {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-    
-    nav ul {
-        flex-direction: column;
-        margin-top: 0;
-        padding: 20px;
-    }
-    
-    nav ul li {
-        margin: 0;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    
-    nav ul li:last-child {
-        border-bottom: none;
-    }
-    
-    nav ul li a {
-        display: block;
-        padding: 15px;
-        border-radius: 0;
-        color: var(--text-color);
-    }
-    
-    nav ul li a.active {
-        background-color: var(--secondary-color);
-        color: var(--white);
-    }
-    
-    .container {
-        padding: 10px;
-    }
-    
-    .calculator-card, .result-card, .chart-section, .share-section {
-        padding: 25px;
-    }
-    
-    .button-group, .share-buttons, .chart-controls {
-        flex-direction: column;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .main-header {
-        padding: 30px 20px;
-    }
-    
-    .info-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .chart-wrapper {
-        height: 300px;
-    }
-    
-    .btn-share, .btn-chart {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding-top: 60px;
-    }
-    
-    .nav-container {
-        padding: 10px 15px;
+        height: 70px;
+        padding: 0 15px;
     }
     
     .logo h1 {
@@ -884,46 +692,170 @@ footer {
         height: 35px;
     }
     
+    /* Menú hamburguesa para móviles */
     .menu-toggle {
-        font-size: 1.3rem;
+        display: block;
+    }
+    
+    nav {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 280px;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+    
+    nav.active {
+        right: 0;
     }
     
     nav ul {
-        padding: 15px;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    nav ul li {
+        margin: 0;
+        margin-bottom: 10px;
     }
     
     nav ul li a {
+        color: var(--dark-color);
+        display: block;
         padding: 12px 15px;
-        font-size: 0.95rem;
+        border-radius: 8px;
+        opacity: 1;
+    }
+    
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: var(--light-color);
+        color: var(--primary-color);
+    }
+    
+    .overlay {
+        display: block;
+    }
+    
+    .overlay.active {
+        display: block;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .calculator-card,
+    .result-card,
+    .chart-section,
+    .share-section {
+        padding: 25px;
+    }
+    
+    .button-group {
+        flex-direction: column;
     }
     
     .result-grid {
         grid-template-columns: 1fr;
     }
     
-    .result-item {
-        padding: 20px 15px;
-    }
-    
-    .result-value {
-        font-size: 1.6rem;
-    }
-    
     .chart-wrapper {
-        height: 250px;
+        height: 300px;
     }
     
-    .chart-section h2 {
-        font-size: 1.5rem;
+    .chart-controls {
+        flex-direction: column;
+        align-items: center;
     }
     
-    .share-section h3 {
-        font-size: 1.3rem;
+    .btn-chart {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .share-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-share {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
     
     .mensaje-alerta {
         right: 10px;
         left: 10px;
         max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    .nav-container {
+        padding: 0 10px;
+    }
+    
+    .main-header {
+        padding: 25px 20px;
+        margin-top: 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .calculator-card,
+    .result-card,
+    .chart-section,
+    .share-section {
+        padding: 20px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 12px 15px;
+    }
+    
+    button {
+        padding: 14px;
+    }
+    
+    .result-value {
+        font-size: 1.5rem;
+    }
+    
+    .chart-wrapper {
+        height: 250px;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .info-icon {
+        font-size: 2.5rem;
     }
 }
